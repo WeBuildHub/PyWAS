@@ -20,14 +20,15 @@ def start(log):
 	pass
 def ins(nom, repertoire):
 	"""Instore un nouveau repertoire dans le répertoire courant grace au module os de Windows"""
-	os.system('mkdir ', nom, repertoire)
+	os.system('mkdir ', nom," ", repertoire)
 	pass
 
 def fun():
+	"""Pour le fun"""
 	print('C\'EST FUN NON ?')
 	pass
-def openF(f, t, c):
-	""""""
+def ChangeStats(f, t, c):
+	"""Ouvre un fichier avec la methode choisie et le ferme automatiquement."""
 	if t == "lire":
 		file = open(f, "r")
 		pass
