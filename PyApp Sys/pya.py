@@ -27,7 +27,7 @@ def fun():
 	"""Pour le fun"""
 	print('C\'EST FUN NON ?')
 	pass
-def ChangeStats(f, t, c):
+def gesFiche(f, t, c):
 	"""Ouvre un fichier avec la methode choisie et le ferme automatiquement."""
 	if t == "lire":
 		file = open(f, "r")
