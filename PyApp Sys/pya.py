@@ -32,7 +32,7 @@ def ChangeStats(f, t, c):
 	if t == "lire":
 		file = open(f, "r")
 		pass
-	if t == "re-ecrit":
+	if t == "ecrit":
 		file = open(f, "w")
 		file.write(c)
 	if t == "rajouter":
@@ -42,6 +42,6 @@ def ChangeStats(f, t, c):
 	pass
 def userIn(message):
 	"""Permet a l'utilisateur de saisir des donnees renvoyees par la fonction"""
-	in = raw_input(message)
-	return in
+	inp = raw_input(message)
+	return inp
 	pass
