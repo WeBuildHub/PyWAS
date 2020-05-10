@@ -8,14 +8,14 @@ def out(caractere_a_afficher):
 	pass
 def log(stri):
 	"""Enregistre un Log dans le fichier Log"""
-	lg = open("logs.log", "a")
+	lg = open("Logs.log", "a")
 	lg.write("...___...\n")
 	lg.write(stri)
 	lg.close
 	pass
 def start(log):
 	"""Inscrit le depart du programme dans le fichier Log personnalisé"""
-	lg = open(log ".log", "w")
+	lg = open("Logs.log", "w")
 	lg.write("Log of")
 	pass
 def ins(nom, repertoire):
@@ -25,4 +25,22 @@ def ins(nom, repertoire):
 
 def fun():
 	print('C\'EST FUN NON ?')
+	pass
+def openF(f, t, c):
+	""""""
+	if t == "lire":
+		file = open(f, "r")
+		pass
+	if t == "re-ecrit":
+		file = open(f, "w")
+		file.write(c)
+	if t == "rajouter":
+		file = open(f, "a")
+		file.write(c)
+	file.close()
+	pass
+def userIn(message):
+	"""Permet a l'utilisateur de saisir des donnees renvoyees par la fonction"""
+	in = raw_input(message)
+	return in
 	pass
